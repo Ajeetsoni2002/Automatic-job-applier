@@ -1,0 +1,21 @@
+{
+  "jobs": [
+    {
+      "id": 7001,
+      "title": "Software Engineer - Backend (Node.js)",
+      "absolute_url": "https://job-boards.greenhouse.io/acme/jobs/7001?gh_src=abc123",
+      "location": { "name": "Bangalore, India" },
+      "updated_at": "2026-10-05T10:00:00-04:00",
+      "first_published": "2026-10-04T09:00:00-04:00",
+      "content": "&lt;p&gt;We are hiring a backend engineer with &lt;strong&gt;1-3 years&lt;/strong&gt; of experience in Node.js, Express and MongoDB.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Build REST APIs&lt;/li&gt;&lt;li&gt;Deploy with Docker&lt;/li&gt;&lt;/ul&gt;"
+    },
+    {
+      "id": 7002,
+      "title": "Senior Account Executive",
+      "absolute_url": "https://job-boards.greenhouse.io/acme/jobs/7002",
+      "location": { "name": "San Francisco, CA" },
+      "updated_at": "2026-10-01T10:00:00-04:00",
+      "content": "&lt;p&gt;Sales role.&lt;/p&gt;"
+    }
+  ]
+}

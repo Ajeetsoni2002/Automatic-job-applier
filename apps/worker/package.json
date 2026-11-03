@@ -1,0 +1,39 @@
+{
+  "name": "@ja/worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch --clear-screen=false src/main.ts",
+    "start": "tsx src/main.ts",
+    "typecheck": "tsc -p tsconfig.json",
+    "ingest:once": "tsx src/cli/ingest-once.ts",
+    "rescore": "tsx src/cli/rescore.ts",
+    "seed": "tsx src/cli/seed.ts",
+    "profile:check": "tsx src/cli/profile-check.ts",
+    "gmail:auth": "tsx src/cli/gmail-auth.ts",
+    "telegram:test": "tsx src/cli/telegram-test.ts",
+    "digest:send": "tsx src/cli/digest-send.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.132.1",
+    "@googleapis/gmail": "^22.0.1",
+    "@ja/shared": "*",
+    "cheerio": "^1.0.0",
+    "domhandler": "^5.0.3",
+    "html-to-text": "^9.0.5",
+    "imapflow": "^2.2.11",
+    "mailparser": "^3.9.37",
+    "mongoose": "^8.9.0",
+    "node-cron": "^4.0.0",
+    "nodemailer": "^10.0.16",
+    "playwright-core": "^1.64.0",
+    "yaml": "^2.6.0",
+    "zod": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/html-to-text": "^9.0.4",
+    "@types/mailparser": "^3.9.0",
+    "@types/nodemailer": "^8.0.2"
+  }
+}

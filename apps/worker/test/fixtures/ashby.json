@@ -1,0 +1,24 @@
+{
+  "jobs": [
+    {
+      "id": "9f8e7d6c-1111-4222-8333-444455556666",
+      "title": "Frontend Engineer",
+      "location": "Remote",
+      "secondaryLocations": [{ "location": "India" }],
+      "isRemote": true,
+      "workplaceType": "Remote",
+      "descriptionPlain": "React, TypeScript, Vite. 1+ years of experience building web apps.",
+      "publishedAt": "2026-10-03T08:00:00.000Z",
+      "jobUrl": "https://jobs.ashbyhq.com/cloudnine/9f8e7d6c-1111-4222-8333-444455556666",
+      "isListed": true
+    },
+    {
+      "id": "unlisted-1",
+      "title": "Hidden Role",
+      "location": "Remote",
+      "descriptionPlain": "x",
+      "jobUrl": "https://jobs.ashbyhq.com/cloudnine/unlisted-1",
+      "isListed": false
+    }
+  ]
+}

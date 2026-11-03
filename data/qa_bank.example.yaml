@@ -1,0 +1,40 @@
+# Reusable answers to common application questions. Copy to data/qa_bank.yaml (gitignored).
+# Used from Phase 2/3 onwards. `aliases` help match differently-worded questions.
+
+answers:
+  - key: notice_period
+    question: What is your notice period?
+    answer: <30 days>
+    aliases: [notice period, how soon can you join, earliest start date]
+  - key: current_ctc
+    question: What is your current CTC?
+    answer: <X LPA>
+    aliases: [current salary, current compensation]
+  - key: expected_ctc
+    question: What is your expected CTC?
+    answer: <Y LPA, negotiable>
+    aliases: [expected salary, salary expectation, desired compensation]
+  - key: relocation
+    question: Are you willing to relocate?
+    answer: <Yes, open to relocating within India>
+    aliases: [relocate, open to relocation]
+  - key: work_authorization
+    question: Are you authorized to work in India?
+    answer: Yes
+    aliases: [work authorization, legally authorized, visa sponsorship]
+  - key: sponsorship
+    question: Will you require visa sponsorship?
+    answer: <No for India; yes for roles based outside India>
+    aliases: [require sponsorship]
+  - key: years_react
+    question: How many years of experience do you have with React?
+    answer: <1>
+    aliases: [react experience]
+  - key: years_node
+    question: How many years of experience do you have with Node.js?
+    answer: <1>
+    aliases: [node experience, nodejs experience]
+  - key: why_company
+    question: Why do you want to work here?
+    answer: <Template. Phase 2 personalises this per company using real profile data only.>
+    aliases: [why are you interested, why this company]

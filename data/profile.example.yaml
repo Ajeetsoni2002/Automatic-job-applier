@@ -1,0 +1,123 @@
+# Master profile. Copy to data/profile.yaml (gitignored) and replace every <PLACEHOLDER>.
+# Rule: everything the system writes about you later (resume, cover letter, answers) is
+# selected or rephrased from THIS file only. If it isn't here, it won't be claimed.
+# Validate with: npm run profile:check
+
+personal:
+  name: <YOUR FULL NAME>
+  email: <you@example.com>
+  phone: <+91-XXXXXXXXXX>
+  location: <City, India>
+  links:
+    linkedin: https://www.linkedin.com/in/<handle>
+    github: https://github.com/<handle>
+    portfolio: https://<your-site>
+
+summary: >
+  MERN stack developer building and deploying full-stack web apps with React, Node.js,
+  Express and MongoDB. <ONE OR TWO LINES ABOUT WHAT YOU ARE GOOD AT>
+
+# Total professional experience in years (internship counts if relevant). Used for filters/scoring.
+totalExperienceYears: 1
+
+skills:
+  languages: [JavaScript, TypeScript, HTML, CSS]
+  frontend: [React, Vite, Redux, Tailwind CSS]
+  backend: [Node.js, Express, REST APIs, JWT]
+  databases: [MongoDB, Mongoose]
+  devops: [GitHub Actions, Nginx, PM2, VPS deployment, Linux]
+  tools: [Git, Postman, VS Code]
+  other: []
+
+# Every bullet needs a unique id. Tailoring picks bullets by id and may only rephrase them.
+# `skills` on a bullet = skills that bullet genuinely demonstrates.
+experience:
+  - id: exp_current
+    company: <CURRENT COMPANY>
+    title: MERN Stack Developer
+    location: <City>
+    start: 2025-12
+    end: present
+    bullets:
+      - id: exp_current_1
+        text: <What you built, with which stack, and the result. Use real numbers only.>
+        skills: [React, Node.js, Express, MongoDB]
+      - id: exp_current_2
+        text: <Deployment / CI work, e.g. set up GitHub Actions deploys to a VPS behind Nginx with PM2.>
+        skills: [GitHub Actions, Nginx, PM2]
+  - id: exp_intern
+    company: <INTERNSHIP COMPANY>
+    title: Web Developer Intern
+    location: <City>
+    start: 2025-08
+    end: 2025-10
+    bullets:
+      - id: exp_intern_1
+        text: <What you did during the internship.>
+        skills: [React, JavaScript]
+
+projects:
+  - id: proj_1
+    name: <PROJECT NAME>
+    url: <https://live-url>
+    repo: <https://github.com/you/repo>
+    stack: [React, Node.js, Express, MongoDB, JWT]
+    bullets:
+      - id: proj_1_1
+        text: <What the project does and the hardest technical part you solved.>
+        skills: [React, Node.js, JWT]
+
+# Application forms fill X / XII / graduation sections from these entries. `level` is one of
+# secondary (X), higher_secondary (XII), diploma, undergraduate, postgraduate. `end` may be a
+# year or year-month ('2025-06'); the month is needed for "Passing month and year" questions.
+education:
+  - level: undergraduate
+    institution: <COLLEGE NAME, CITY>
+    university: <UNIVERSITY>
+    degree: B.Tech
+    field: Computer Science and Engineering
+    state: <STATE>
+    country: India
+    start: '2021'
+    end: '2025'
+    grade: <CGPA or %>
+  - level: higher_secondary
+    institution: <SCHOOL NAME>
+    degree: Class 12th
+    board: <BOARD, e.g. CBSE>
+    field: <STREAM, e.g. Science (PCM)>
+    state: <STATE>
+    start: '2019'
+    end: '2021'
+    grade: <%>
+
+certifications: []
+
+preferences:
+  # Role names used for job-board searches and scoring.
+  roles:
+    - MERN Stack Developer
+    - Full Stack Developer
+    - Backend Developer Node.js
+    - Frontend Developer React
+  # Extra search keywords (Adzuna "what" queries). Defaults to roles if empty.
+  searchKeywords: [MERN, Node.js developer, React developer]
+  # Cities you'd work in on-site/hybrid. Remote roles are handled by acceptGlobalRemote/countries.
+  locations: [Bengaluru, Pune, Hyderabad, Noida, Gurugram, Delhi, Mumbai, Chennai]
+  countries: [IN]
+  acceptGlobalRemote: true
+  workModes: [onsite, hybrid, remote]
+  maxExperienceYears: 3
+  # Your graduation year ("batch"). Postings listing eligible batches are matched against it.
+  graduationYear: 2025
+  minSalaryLpa: 4 # <YOUR MINIMUM, in lakhs per annum>
+  noticePeriodDays: 30
+  excludeCompanies: []
+  # Job titles containing any of these are filtered out before scoring.
+  excludeKeywords: [unpaid, commission, Java, .NET, PHP, Laravel, Android, iOS, Salesforce, SAP, QA, Test,
+    Security, Site Reliability, SRE, Support Engineer, Solutions Engineer, Sales, Embedded, Firmware,
+    Hardware, Machine Learning, ML Engineer]
+  # A job title must contain at least one of these, otherwise it's skipped (saves LLM calls on
+  # sales/HR/ops roles from company job boards). Remove this key to use the built-in default list.
+  titleKeywords: [developer, engineer, sde, software, full stack, fullstack, frontend, front end,
+    backend, back end, web, mern, mean, node, react, javascript, typescript, programmer]

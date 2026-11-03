@@ -1,0 +1,58 @@
+{
+  "name": "job-autopilot",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Personal job search automation system",
+  "engines": {
+    "node": ">=22"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n api,worker,web -c blue,magenta,green \"npm run dev -w @ja/api\" \"npm run dev -w @ja/worker\" \"npm run dev -w @ja/web\"",
+    "build": "npm run build -w @ja/web",
+    "start:api": "npm run start -w @ja/api",
+    "start:worker": "npm run start -w @ja/worker",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "ingest:once": "tsx apps/worker/src/cli/ingest-once.ts",
+    "ingest:dry": "tsx apps/worker/src/cli/ingest-once.ts --dry",
+    "rescore": "tsx apps/worker/src/cli/rescore.ts",
+    "tailor": "tsx apps/worker/src/cli/tailor.ts",
+    "apply": "tsx apps/worker/src/cli/apply.ts",
+    "outreach": "tsx apps/worker/src/cli/outreach.ts",
+    "discover": "tsx apps/worker/src/cli/discover-companies.ts",
+    "refilter": "tsx apps/worker/src/cli/rescore.ts --refilter --no-score",
+    "seed": "tsx apps/worker/src/cli/seed.ts",
+    "seed:clear": "tsx apps/worker/src/cli/seed.ts --clear",
+    "profile:check": "tsx apps/worker/src/cli/profile-check.ts",
+    "gmail:auth": "tsx apps/worker/src/cli/gmail-auth.ts",
+    "telegram:test": "tsx apps/worker/src/cli/telegram-test.ts",
+    "digest:send": "tsx apps/worker/src/cli/digest-send.ts",
+    "digest:preview": "tsx apps/worker/src/cli/digest-send.ts --print",
+    "hash-password": "tsx apps/api/src/cli/hash-password.ts",
+    "set-password": "tsx apps/api/src/cli/set-password.ts"
+  },
+  "dependencies": {
+    "tsx": "^4.19.0"
+  },
+  "overrides": {
+    "shell-quote": "^1.12.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@types/node": "^22.10.0",
+    "concurrently": "^9.1.0",
+    "eslint": "^9.17.0",
+    "prettier": "^3.4.0",
+    "typescript": "^5.7.0",
+    "typescript-eslint": "^8.18.0",
+    "vitest": "^5.0.3"
+  }
+}

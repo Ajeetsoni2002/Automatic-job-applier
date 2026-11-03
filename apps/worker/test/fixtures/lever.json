@@ -1,0 +1,14 @@
+[
+  {
+    "id": "a1b2c3d4-0000-4000-8000-000000000001",
+    "text": "Full Stack Developer (MERN)",
+    "hostedUrl": "https://jobs.lever.co/shopkart/a1b2c3d4-0000-4000-8000-000000000001",
+    "categories": { "location": "Pune", "allLocations": ["Pune", "Remote - India"], "commitment": "Full-time", "team": "Engineering" },
+    "workplaceType": "hybrid",
+    "createdAt": 1759600000000,
+    "descriptionPlain": "Join our team building commerce tools with React and Node.js.",
+    "lists": [{ "text": "Requirements", "content": "<li>0-2 years of experience</li><li>React, Node.js, MongoDB</li>" }],
+    "additionalPlain": "We offer flexible hours.",
+    "salaryRange": { "min": 600000, "max": 1000000, "currency": "INR", "interval": "per-year-salary" }
+  }
+]

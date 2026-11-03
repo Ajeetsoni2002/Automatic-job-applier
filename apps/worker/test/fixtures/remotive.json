@@ -1,0 +1,26 @@
+{
+  "job-count": 2,
+  "jobs": [
+    {
+      "id": 1900001,
+      "url": "https://remotive.com/remote-jobs/software-dev/node-developer-1900001",
+      "title": "Node.js Developer",
+      "company_name": "DataPipe",
+      "category": "Software Development",
+      "job_type": "full_time",
+      "publication_date": "2026-10-06T12:00:00",
+      "candidate_required_location": "Worldwide",
+      "salary": "",
+      "description": "<p>Node.js, Express, PostgreSQL. 2+ years of experience.</p>"
+    },
+    {
+      "id": 1900002,
+      "url": "https://remotive.com/remote-jobs/software-dev/react-dev-1900002",
+      "title": "React Developer",
+      "company_name": "USCo",
+      "publication_date": "2026-10-06T12:00:00",
+      "candidate_required_location": "USA Only",
+      "description": "<p>React.</p>"
+    }
+  ]
+}

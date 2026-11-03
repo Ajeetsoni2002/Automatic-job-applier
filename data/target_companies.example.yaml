@@ -1,0 +1,44 @@
+# Companies whose public job boards are checked on every run.
+# Copy to data/target_companies.yaml (gitignored) and edit.
+#
+# How to find the slug from a careers URL:
+#   greenhouse: https://boards.greenhouse.io/<slug>  or  https://job-boards.greenhouse.io/<slug>
+#   lever:      https://jobs.lever.co/<slug>
+#   ashby:      https://jobs.ashbyhq.com/<slug>
+# Verify a slug in the browser before adding it:
+#   greenhouse: https://boards-api.greenhouse.io/v1/boards/<slug>/jobs
+#   lever:      https://api.lever.co/v0/postings/<slug>?mode=json
+#   ashby:      https://api.ashbyhq.com/posting-api/job-board/<slug>
+# A wrong slug shows up as a "board not found (check slug)" warning on the Sources page.
+#
+# These slugs answered on 2026-10-08. Companies change ATS over time, so re-check occasionally.
+
+companies:
+  - name: Razorpay
+    ats: greenhouse
+    slug: razorpaysoftwareprivatelimited
+    priority: high
+  - name: CRED
+    ats: lever
+    slug: cred
+    priority: high
+  - name: Meesho
+    ats: lever
+    slug: meesho
+    priority: high
+  - name: Zeta
+    ats: lever
+    slug: zeta
+    priority: medium
+  - name: Groww
+    ats: greenhouse
+    slug: groww
+    priority: medium
+  - name: Vercel
+    ats: greenhouse
+    slug: vercel
+    priority: low
+  - name: Supabase
+    ats: ashby
+    slug: supabase
+    priority: low

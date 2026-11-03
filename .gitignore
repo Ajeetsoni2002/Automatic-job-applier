@@ -1,0 +1,22 @@
+node_modules/
+dist/
+coverage/
+*.log
+
+# Secrets and personal data — never commit
+.env
+.env.*
+!.env.example
+data/*.yaml
+!data/*.example.yaml
+.secrets/
+
+# Runtime artifacts (browser profiles live in APP_HOME, outside the repo)
+browser-profiles/
+screenshots/
+output/
+
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json

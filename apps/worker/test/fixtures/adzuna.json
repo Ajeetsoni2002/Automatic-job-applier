@@ -1,0 +1,29 @@
+{
+  "count": 2,
+  "results": [
+    {
+      "id": "4400000001",
+      "title": "<strong>MERN</strong> Stack Developer",
+      "description": "Looking for a MERN stack developer with 1-3 years of experience in React, Node.js…",
+      "redirect_url": "https://www.adzuna.in/details/4400000001?utm_medium=api&utm_source=abc",
+      "created": "2026-10-06T05:30:00Z",
+      "company": { "display_name": "Infotech Solutions Pvt Ltd" },
+      "location": { "display_name": "Noida, Uttar Pradesh", "area": ["India", "Uttar Pradesh", "Noida"] },
+      "salary_min": 500000,
+      "salary_max": 800000,
+      "salary_is_predicted": "0"
+    },
+    {
+      "id": "4400000002",
+      "title": "Node.js Developer",
+      "description": "Node developer…",
+      "redirect_url": "https://www.adzuna.in/details/4400000002",
+      "created": "2026-10-05T05:30:00Z",
+      "company": { "display_name": "Other Co" },
+      "location": { "display_name": "Chennai, Tamil Nadu" },
+      "salary_min": 300000,
+      "salary_max": 300000,
+      "salary_is_predicted": "1"
+    }
+  ]
+}
